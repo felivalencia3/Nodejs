@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Database Integration</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+<form action="/">
+    <label for="ide">Enter the ID from the Person you wish to find: </label>
+    <input type="text" id="ide" name="id">
+    <input type="button" onclick="getdata()" value="Submit">
+</form>
+<!--<h3>Name:</h3>
+<p id="receivename"> </p>
+<h3>Lived in: </h3>
+<p id="receivecity"></p>
+<h3>Age: </h3>
+<p id="receiveage"></p>
+<h3>And the ID was: </h3>
+<p id="receiveid"></p>
+-->
+<table id="table" style="display: none;">
+    <tr><th>Name:</th><td id="receivename"></td></tr>
+    <tr><th>City:</th><td id="receivecity"></td></tr>
+    <tr><th>Age:</th><td id="receiveage"></td></tr>
+    <tr><th>ID:</th><td id="receiveid"></td></tr>
+</table>
+</body>
+
+<script>
+    /*
+$(document).ready(function() {
+    $.ajax({
+        url: "http://rest-service.guides.spring.io/greeting"
+    }).then(function(data) {
+        $('.greeting-id').append(data.id);
+        $('.greeting-content').append(data.content);
+    });
+});
+ */
+    function getdata() {
+        let params = $("#ide").val();
+        if (params) {
+
+            
+            let url = "http://127.0.0.1:8081/select?id="+params;
+            
+            $.get(url, (data, status) => {
+                
+                $("#receivename").html(data.name);
+                $("#receivecity").html(data.city);
+                $("#receiveage").html(data.age);
+                $("#receiveid").html(data.id);
+                console.log(data);
+                console.log(status);
+                $("#table").fadeIn(3000);
+            })
+        }
+
+    }
+</script>
+
+</html>

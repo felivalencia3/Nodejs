@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Love Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <label for="fname">Enter the First Person's name:</label>
+    <input type="text" id="fname" name="fname" value="Tom"><br/>
+    <label for="sname">Enter the Second Person's name:</label>
+    <input type="text" id="sname" name="sname" value="Bill"><br/>
+    <button onclick="getData()">Submit</button>
+
+<table id="table" style="display: none">
+<tr><td colspan="2">Results:</td></tr>
+    <tr><th>Percentage: </th><td id="percent"></td></tr>
+    <tr><th>Message:</th><td id="msg"></td></tr>
+</table>
+<script>
+    function getData() {
+        let fname = $("#fname").val();
+        let sname= $("#sname").val();
+        if(fname && sname) {
+            let url = "http://192.168.0.3:8081/calculate?fname="+fname+"&&sname="+sname;
+            $.get(url, (data, status) => {
+                $("#percent").html(data.percentage);
+                $("#msg").html(data.result);
+                console.log(data);
+                $("#table").fadeIn("slow")
+            })
+        }
+    }
+</script>
+</body>
+</html>

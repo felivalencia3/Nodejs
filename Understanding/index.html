@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Natural Language Understanding</title>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<form id="form" action="/">
+    <textarea id="text" name="understandme" placeholder="Enter text here..."></textarea>
+    <input type="button" onclick="foo()" value="Submit">
+</form>
+<div id="divvy"></div>
+<script>
+    function foo() {
+        let text = $("#text").val();
+        console.log(text);
+        if(text) {
+            let url="/understand?text="+text;
+            $.get(url, (data,status) => {
+                let result = JSON.parse(data).toString();
+                $("#divvy").html(result = result.replace(/,/g, "<br>"))
+            })
+        }
+    }
+</script>
+</body>
+</html>

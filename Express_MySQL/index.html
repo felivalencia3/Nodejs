@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Database Integration</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<form action="/">
+    <label for="ide">Enter the ID from the Person you wish to find: </label>
+    <input type="text" id="ide" name="id">
+    <input type="button" onclick="getdata()" value="Submit">
+</form>
+<!--<h3>Name:</h3>
+<p id="receivename"> </p>
+<h3>Lived in: </h3>
+<p id="receivecity"></p>
+<h3>Age: </h3>
+<p id="receiveage"></p>
+<h3>And the ID was: </h3>
+<p id="receiveid"></p>
+-->
+<table>
+    <tr><th>Name:</th><td id="receivename"></td></tr>
+    <tr><th>City:</th><td id="receivecity"></td></tr>
+    <tr><th>Age:</th><td id="receiveage"></td></tr>
+    <tr><th>ID:</th><td id="receiveid"></td></tr>
+</table>
+</body>
+
+<script>
+    function getdata() {
+        let request = new XMLHttpRequest();
+        let params = document.getElementById("ide").value;
+        request.open('GET', "http://127.0.0.1:8081/select?id="+params, true);
+        request.onload = function () {
+            let data = JSON.parse(this.response);
+            let dataPacket = data[0];
+            console.log(dataPacket.name);
+            document.getElementById("receivename").innerHTML =" <b>"+dataPacket.name+"</b>";
+            document.getElementById("receivecity").innerHTML = dataPacket.city;
+            document.getElementById("receiveage").innerHTML = dataPacket.age;
+
+            document.getElementById("receiveid").innerHTML = dataPacket.id;
+        };
+
+        request.send();
+
+    }
+</script>
+</html>
