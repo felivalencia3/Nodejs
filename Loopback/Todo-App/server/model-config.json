@@ -35,7 +35,10 @@
     "dataSource": "db",
     "public": false
   },
-  "CoffeeShop": {
+  "Message": {
+    "dataSource": null
+  },
+  "Todo": {
     "dataSource": "mysqlDs",
     "public": true
   }

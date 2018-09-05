@@ -1,6 +1,6 @@
 {
-  "name": "CoffeeShop",
-  "plural": "CoffeeShops",
+  "name": "Todo",
+  "plural": "Todos",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -9,9 +9,10 @@
   "properties": {
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "default": "BlankTodo"
     },
-    "city": {
+    "date_posted": {
       "type": "string",
       "required": true
     }
