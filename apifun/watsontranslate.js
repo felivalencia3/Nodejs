@@ -11,10 +11,12 @@ app.use(function(req, res, next) {
     next();
 });
 app.get("/translate", (req, res,next) => {
+    let textparam = req.query.str;
     var parameters = {
-        text: req.query.str,
-        model_id: 'en-es'
+        text: textparam,
+        model_id: 'es-en'
     };
+    if (!textparam) {res.status(404).send("Empty Input!")};
     languageTranslator.translate(
         parameters,
         function(error, response) {
