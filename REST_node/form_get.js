@@ -11,17 +11,11 @@ app.use(function(req, res, next) {
     next();
 });
 
-app.get('/process_get', function (req, res) {
+app.get('/get', function (req, res) {
     // Prepare output in JSON format
-
-    /*response = {
-        first_name:req.query.first_name,
-        last_name:req.query.last_name
-    };
-    */
-
-    let first = req.query.first_name;
-    let last = req.query.last_name;
+    console.log(req.headers)
+    let first = req.query.user;
+    let last = req.query.pass;
     let reversefirst = first.split("").reverse().join("");
     let reverselast = last.split("").reverse().join("");
     response = {
