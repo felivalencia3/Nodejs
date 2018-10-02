@@ -75,7 +75,63 @@ class Login extends React.Component {
     }
 }
 class SignUp extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {email: "",user: "", pass: "",check: ""};
+        this.handleChangeUser = this.handleChangeUser.bind(this);
+        this.handleEmail = this.handleEmail.bind(this);
+        this.handlePass = this.handlePass.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handlePassCheck = this.handlePassCheck.bind(this)
+    }
+    handlePassCheck(event) {
+        this.setState({check: event.target.value })
+    }
+    handleChangeUser(event) {
+        this.setState({user: event.target.value })
+    }
+    handleEmail(event) {
+        this.setState({email: event.target.value})
+    }
+    handlePass(event) {
+        this.setState({pass: event.target.value})
+    }
+    handleSubmit(event) {
+        const user = this.state.user;
+        const email = this.state.email;
+        const pass = this.state.pass;
+        const check = this.state.check;
+        if (pass === check) {
+            axios.post("http://192.168.0.6:8081/signup",
+                querystring.stringify({
+                    user: this.state.user,
+                    pass: this.state.pass
+                }), {
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    }
+                }).then(function(response) {
+                alert(JSON.stringify(response.data));
+                console.log(response);
+            });
+        } else {
+            alert("Your passwords do not match")
+        }
+
+        event.preventDefault()
+    }
+
     render() {
-        return <h1>Sign-Up</h1>
+        return (<form onSubmit={this.handleSubmit}>
+            <h1>Username:</h1>
+            <input value={this.state.user} id="user" name="user" onChange={this.handleChangeUser}/>
+            <h1>Email:</h1>
+            <input value={this.state.email} name="email" onChange={this.handleEmail}/>
+            <h1>Password: </h1>
+            <input value={this.state.pass} name="pass" type="password" onChange={this.handlePass}/>
+            <h1>Retype Password:</h1>
+            <input value={this.state.check} name="check" type="password" onChange={this.handlePassCheck}/>
+            <input type="submit" value="Submit"/>
+        </form>)
     }
 }

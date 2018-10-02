@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>App.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #c792ea; font-style: italic;}
+.s1 { color: #c3cee3;}
+.s2 { color: #c3e88d;}
+.s3 { color: #89ddff;}
+.s4 { color: #f07178;}
+.s5 { color: #ffcb6b; font-style: italic;}
+.s6 { color: #c3cee3;}
+</style>
+</head>
+<body bgcolor="#263238">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+App.js</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">React from </span><span class="s2">'react'</span><span class="s3">;</span>
+<span class="s0">import </span><span class="s1">axios from </span><span class="s2">'axios'</span><span class="s3">;</span>
+<span class="s0">import </span><span class="s1">querystring from </span><span class="s2">'querystring'</span><span class="s3">;</span>
+<span class="s0">export default class </span><span class="s1">App </span><span class="s0">extends </span><span class="s1">React</span><span class="s3">.</span><span class="s1">Component </span><span class="s3">{</span>
+    <span class="s1">constructor</span><span class="s3">(</span><span class="s1">props</span><span class="s3">) {</span>
+        <span class="s0">super</span><span class="s3">(</span><span class="s1">props</span><span class="s3">);</span>
+        <span class="s0">this</span><span class="s3">.</span><span class="s1">handleLoginClick </span><span class="s3">= </span><span class="s0">this</span><span class="s3">.</span><span class="s1">handleLoginClick</span><span class="s3">.</span><span class="s1">bind</span><span class="s3">(</span><span class="s0">this</span><span class="s3">);</span>
+        <span class="s0">this</span><span class="s3">.</span><span class="s1">handleSignUpClick </span><span class="s3">= </span><span class="s0">this</span><span class="s3">.</span><span class="s1">handleSignUpClick</span><span class="s3">.</span><span class="s1">bind</span><span class="s3">(</span><span class="s0">this</span><span class="s3">);</span>
+        <span class="s0">this</span><span class="s3">.</span><span class="s1">handleBackClick </span><span class="s3">= </span><span class="s0">this</span><span class="s3">.</span><span class="s1">handleBackClick</span><span class="s3">.</span><span class="s1">bind</span><span class="s3">(</span><span class="s0">this</span><span class="s3">);</span>
+        <span class="s0">this</span><span class="s3">.</span><span class="s1">state </span><span class="s3">= {</span><span class="s1">screen</span><span class="s3">: </span><span class="s2">&quot;index&quot;</span><span class="s3">}</span>
+    }
+    <span class="s1">handleLoginClick</span><span class="s3">() {</span>
+        <span class="s0">this</span><span class="s3">.</span><span class="s1">setState</span><span class="s3">({</span><span class="s1">screen</span><span class="s3">:</span><span class="s2">&quot;login&quot;</span><span class="s3">})</span>
+    }
+    <span class="s1">handleSignUpClick</span><span class="s3">() {</span>
+        <span class="s0">this</span><span class="s3">.</span><span class="s1">setState</span><span class="s3">({</span><span class="s1">screen</span><span class="s3">: </span><span class="s2">&quot;sign&quot;</span><span class="s3">})</span>
+    }
+    <span class="s1">handleBackClick</span><span class="s3">() {</span>
+        <span class="s0">this</span><span class="s3">.</span><span class="s1">setState</span><span class="s3">({</span><span class="s1">screen</span><span class="s3">: </span><span class="s2">&quot;index&quot;</span><span class="s3">})</span>
+    }
+    <span class="s1">render</span><span class="s3">() {</span>
+        <span class="s0">const </span><span class="s1">screen </span><span class="s3">= </span><span class="s0">this</span><span class="s3">.</span><span class="s1">state</span><span class="s3">.</span><span class="s1">screen</span><span class="s3">;</span>
+        <span class="s0">let </span><span class="s1">form</span><span class="s3">;</span>
+        <span class="s0">if</span><span class="s3">(</span><span class="s1">screen </span><span class="s3">=== </span><span class="s2">&quot;index&quot;</span><span class="s3">) {</span>
+            <span class="s1">form </span><span class="s3">= &lt;</span><span class="s4">div</span><span class="s3">&gt;&lt;</span><span class="s4">button </span><span class="s5">onClick</span><span class="s2">=</span><span class="s3">{</span><span class="s0">this</span><span class="s3">.</span><span class="s1">handleLoginClick</span><span class="s3">}&gt;</span><span class="s6">Login</span><span class="s3">&lt;/</span><span class="s4">button</span><span class="s3">&gt;&lt;</span><span class="s4">button </span><span class="s5">onClick</span><span class="s2">=</span><span class="s3">{</span><span class="s0">this</span><span class="s3">.</span><span class="s1">handleSignUpClick</span><span class="s3">}&gt;</span><span class="s6">Sign-Up</span><span class="s3">&lt;/</span><span class="s4">button</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span>
+        } <span class="s0">else if </span><span class="s3">(</span><span class="s1">screen </span><span class="s3">=== </span><span class="s2">&quot;login&quot;</span><span class="s3">) {</span>
+            <span class="s1">form </span><span class="s3">= &lt;</span><span class="s4">div</span><span class="s3">&gt;&lt;</span><span class="s4">Login </span><span class="s3">/&gt;&lt;</span><span class="s4">button </span><span class="s5">onClick</span><span class="s2">=</span><span class="s3">{</span><span class="s0">this</span><span class="s3">.</span><span class="s1">handleBackClick</span><span class="s3">}&gt;</span><span class="s6">Back</span><span class="s3">&lt;/</span><span class="s4">button</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span>
+        } <span class="s0">else if </span><span class="s3">(</span><span class="s1">screen </span><span class="s3">=== </span><span class="s2">&quot;sign&quot;</span><span class="s3">) {</span>
+            <span class="s1">form </span><span class="s3">= &lt;</span><span class="s4">div</span><span class="s3">&gt;&lt;</span><span class="s4">SignUp </span><span class="s3">/&gt;&lt;</span><span class="s4">button </span><span class="s5">onClick</span><span class="s2">=</span><span class="s3">{</span><span class="s0">this</span><span class="s3">.</span><span class="s1">handleBackClick</span><span class="s3">}&gt;</span><span class="s6">Back</span><span class="s3">&lt;/</span><span class="s4">button</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span>
+        }
+        <span class="s0">return </span><span class="s3">&lt;</span><span class="s4">div</span><span class="s3">&gt;{</span><span class="s1">form</span><span class="s3">}&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span>
+    }
+}
+<span class="s0">class </span><span class="s1">Login </span><span class="s0">extends </span><span class="s1">React</span><span class="s3">.</span><span class="s1">Component </span><span class="s3">{</span>
+    <span class="s1">constructor</span><span class="s3">(</span><span class="s1">props</span><span class="s3">) {</span>
+        <span class="s0">super</span><span class="s3">(</span><span class="s1">props</span><span class="s3">);</span>
+        <span class="s0">this</span><span class="s3">.</span><span class="s1">state </span><span class="s3">= {</span><span class="s1">user</span><span class="s3">: </span><span class="s2">&quot;&quot;</span><span class="s3">,</span><span class="s1">pass</span><span class="s3">: </span><span class="s2">&quot;&quot;</span><span class="s3">};</span>
+        <span class="s0">this</span><span class="s3">.</span><span class="s1">handleSubmit </span><span class="s3">= </span><span class="s0">this</span><span class="s3">.</span><span class="s1">handleSubmit</span><span class="s3">.</span><span class="s1">bind</span><span class="s3">(</span><span class="s0">this</span><span class="s3">);</span>
+        <span class="s0">this</span><span class="s3">.</span><span class="s1">handleChangePass </span><span class="s3">= </span><span class="s0">this</span><span class="s3">.</span><span class="s1">handleChangePass</span><span class="s3">.</span><span class="s1">bind</span><span class="s3">(</span><span class="s0">this</span><span class="s3">);</span>
+        <span class="s0">this</span><span class="s3">.</span><span class="s1">handleChangeUser </span><span class="s3">= </span><span class="s0">this</span><span class="s3">.</span><span class="s1">handleChangeUser</span><span class="s3">.</span><span class="s1">bind</span><span class="s3">(</span><span class="s0">this</span><span class="s3">);</span>
+    }
+    <span class="s1">handleSubmit</span><span class="s3">(</span><span class="s1">event</span><span class="s3">) {</span>
+        <span class="s1">axios</span><span class="s3">.</span><span class="s1">post</span><span class="s3">(</span><span class="s2">&quot;http://192.168.0.6:8081/login&quot;</span><span class="s3">,</span>
+            <span class="s1">querystring</span><span class="s3">.</span><span class="s1">stringify</span><span class="s3">({</span>
+                <span class="s1">user</span><span class="s3">: </span><span class="s0">this</span><span class="s3">.</span><span class="s1">state</span><span class="s3">.</span><span class="s1">user</span><span class="s3">,</span>
+                <span class="s1">pass</span><span class="s3">: </span><span class="s0">this</span><span class="s3">.</span><span class="s1">state</span><span class="s3">.</span><span class="s1">pass</span>
+            <span class="s3">}), {</span>
+                <span class="s1">headers</span><span class="s3">: {</span>
+                    <span class="s2">&quot;Content-Type&quot;</span><span class="s3">: </span><span class="s2">&quot;application/x-www-form-urlencoded&quot;</span>
+                <span class="s3">}</span>
+            }).<span class="s1">then</span><span class="s3">(</span><span class="s0">function</span><span class="s3">(</span><span class="s1">response</span><span class="s3">) {</span>
+                <span class="s1">alert</span><span class="s3">(</span><span class="s1">JSON</span><span class="s3">.</span><span class="s1">stringify</span><span class="s3">(</span><span class="s1">response</span><span class="s3">.</span><span class="s1">data</span><span class="s3">));</span>
+                <span class="s1">console</span><span class="s3">.</span><span class="s1">log</span><span class="s3">(</span><span class="s1">response</span><span class="s3">);</span>
+        });
+        <span class="s1">event</span><span class="s3">.</span><span class="s1">preventDefault</span><span class="s3">()</span>
+    }
+    <span class="s1">handleChangeUser</span><span class="s3">(</span><span class="s1">event</span><span class="s3">) {</span>
+        <span class="s0">this</span><span class="s3">.</span><span class="s1">setState</span><span class="s3">({</span><span class="s1">user</span><span class="s3">: </span><span class="s1">event</span><span class="s3">.</span><span class="s1">target</span><span class="s3">.</span><span class="s1">value</span><span class="s3">})</span>
+    }
+    <span class="s1">handleChangePass</span><span class="s3">(</span><span class="s1">event</span><span class="s3">) {</span>
+        <span class="s0">this</span><span class="s3">.</span><span class="s1">setState</span><span class="s3">({</span><span class="s1">pass</span><span class="s3">: </span><span class="s1">event</span><span class="s3">.</span><span class="s1">target</span><span class="s3">.</span><span class="s1">value</span><span class="s3">})</span>
+    }
+    <span class="s1">render</span><span class="s3">() {</span>
+        <span class="s0">return </span><span class="s3">(</span>
+            &lt;<span class="s4">form </span><span class="s5">onSubmit</span><span class="s2">=</span><span class="s3">{</span><span class="s0">this</span><span class="s3">.</span><span class="s1">handleSubmit</span><span class="s3">}&gt;</span>
+                &lt;<span class="s4">h1</span><span class="s3">&gt;</span><span class="s6">Username</span><span class="s3">&lt;/</span><span class="s4">h1</span><span class="s3">&gt;</span>
+                &lt;<span class="s4">input </span><span class="s5">value</span><span class="s2">=</span><span class="s3">{</span><span class="s0">this</span><span class="s3">.</span><span class="s1">state</span><span class="s3">.</span><span class="s1">user</span><span class="s3">} </span><span class="s5">id</span><span class="s2">=&quot;user&quot; </span><span class="s5">name</span><span class="s2">=&quot;user&quot; </span><span class="s5">onChange</span><span class="s2">=</span><span class="s3">{</span><span class="s0">this</span><span class="s3">.</span><span class="s1">handleChangeUser</span><span class="s3">}/&gt;</span>
+                &lt;<span class="s4">h1</span><span class="s3">&gt;</span><span class="s6">Password:</span><span class="s3">&lt;/</span><span class="s4">h1</span><span class="s3">&gt;</span>
+                &lt;<span class="s4">input </span><span class="s5">value</span><span class="s2">=</span><span class="s3">{</span><span class="s0">this</span><span class="s3">.</span><span class="s1">state</span><span class="s3">.</span><span class="s1">pass</span><span class="s3">} </span><span class="s5">id</span><span class="s2">=&quot;pass&quot; </span><span class="s5">name</span><span class="s2">=&quot;pass&quot; </span><span class="s5">onChange</span><span class="s2">=</span><span class="s3">{</span><span class="s0">this</span><span class="s3">.</span><span class="s1">handleChangePass</span><span class="s3">}/&gt;</span>
+                &lt;<span class="s4">br </span><span class="s3">/&gt;</span>
+                &lt;<span class="s4">br </span><span class="s3">/&gt;</span>
+                &lt;<span class="s4">input </span><span class="s5">type</span><span class="s2">=&quot;submit&quot; </span><span class="s5">value</span><span class="s2">=&quot;Submit&quot; </span><span class="s3">/&gt;</span>
+            &lt;/<span class="s4">form</span><span class="s3">&gt;</span>
+        )
+    }
+}
+<span class="s0">class </span><span class="s1">SignUp </span><span class="s0">extends </span><span class="s1">React</span><span class="s3">.</span><span class="s1">Component </span><span class="s3">{</span>
+    <span class="s1">render</span><span class="s3">() {</span>
+        <span class="s0">return </span><span class="s3">&lt;</span><span class="s4">h1</span><span class="s3">&gt;</span><span class="s6">Sign-Up</span><span class="s3">&lt;/</span><span class="s4">h1</span><span class="s3">&gt;</span>
+    }
+}</pre>
+</body>
+</html>

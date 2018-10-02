@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>server.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #c3cee3;}
+.s1 { color: #c792ea; font-style: italic;}
+.s2 { color: #89ddff;}
+.s3 { color: #c3e88d;}
+.s4 { color: #f78c6c;}
+</style>
+</head>
+<body bgcolor="#263238">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+server.js</font>
+</center></td></tr></table>
+<pre>
+<span class="s1">const </span><span class="s0">MySQL </span><span class="s2">= </span><span class="s0">require</span><span class="s2">(</span><span class="s3">&quot;MySQL&quot;</span><span class="s2">);</span>
+<span class="s1">const </span><span class="s0">nodemailer </span><span class="s2">= </span><span class="s0">require</span><span class="s2">(</span><span class="s3">&quot;nodemailer&quot;</span><span class="s2">);</span>
+<span class="s1">const </span><span class="s0">express </span><span class="s2">= </span><span class="s0">require</span><span class="s2">(</span><span class="s3">&quot;express&quot;</span><span class="s2">);</span>
+<span class="s1">const </span><span class="s0">app </span><span class="s2">= </span><span class="s0">express</span><span class="s2">();</span>
+<span class="s1">const </span><span class="s0">mysql </span><span class="s2">= </span><span class="s0">require</span><span class="s2">(</span><span class="s3">&quot;mysql&quot;</span><span class="s2">);</span>
+<span class="s1">const </span><span class="s0">bodyparser </span><span class="s2">= </span><span class="s0">require</span><span class="s2">(</span><span class="s3">&quot;body-parser&quot;</span><span class="s2">);</span>
+<span class="s1">const </span><span class="s0">CryptoJS </span><span class="s2">= </span><span class="s0">require</span><span class="s2">(</span><span class="s3">&quot;crypto-js&quot;</span><span class="s2">);</span>
+<span class="s1">const </span><span class="s0">con </span><span class="s2">= </span><span class="s0">mysql</span><span class="s2">.</span><span class="s0">createConnection</span><span class="s2">({</span>
+    <span class="s0">host</span><span class="s2">: </span><span class="s3">&quot;localhost&quot;</span><span class="s2">,</span>
+    <span class="s0">user</span><span class="s2">: </span><span class="s3">&quot;root&quot;</span><span class="s2">,</span>
+    <span class="s0">password</span><span class="s2">: </span><span class="s3">&quot;castro03&quot;</span><span class="s2">,</span>
+    <span class="s0">database</span><span class="s2">: </span><span class="s3">&quot;LoginDB&quot;</span>
+<span class="s2">});</span>
+<span class="s1">const </span><span class="s0">transporter </span><span class="s2">= </span><span class="s0">nodemailer</span><span class="s2">.</span><span class="s0">createTransport</span><span class="s2">({</span>
+    <span class="s0">service</span><span class="s2">: </span><span class="s3">'gmail'</span><span class="s2">,</span>
+    <span class="s0">auth</span><span class="s2">: {</span>
+        <span class="s0">user</span><span class="s2">: </span><span class="s3">'redpandamc85@gmail.com'</span><span class="s2">,</span>
+        <span class="s0">pass</span><span class="s2">: </span><span class="s3">'helpingoTES'</span>
+    <span class="s2">}</span>
+});
+<span class="s0">app</span><span class="s2">.</span><span class="s0">use</span><span class="s2">(</span><span class="s1">function </span><span class="s2">(</span><span class="s0">req</span><span class="s2">, </span><span class="s0">res</span><span class="s2">, </span><span class="s0">next</span><span class="s2">) {</span>
+    <span class="s0">res</span><span class="s2">.</span><span class="s0">header</span><span class="s2">(</span><span class="s3">&quot;Access-Control-Allow-Origin&quot;</span><span class="s2">, </span><span class="s3">&quot;*&quot;</span><span class="s2">);</span>
+    <span class="s0">res</span><span class="s2">.</span><span class="s0">header</span><span class="s2">(</span><span class="s3">&quot;Access-Control-Allow-Headers&quot;</span><span class="s2">, </span><span class="s3">&quot;Origin, X-Requested-With, Content-Type, Accept&quot;</span><span class="s2">);</span>
+    <span class="s0">next</span><span class="s2">();</span>
+});
+<span class="s1">let </span><span class="s0">urlencodedparser </span><span class="s2">= </span><span class="s0">bodyparser</span><span class="s2">.</span><span class="s0">urlencoded</span><span class="s2">({</span><span class="s0">extended</span><span class="s2">: </span><span class="s1">false</span><span class="s2">});</span>
+<span class="s1">function </span><span class="s0">decrypt</span><span class="s2">(</span><span class="s0">encrypted</span><span class="s2">, </span><span class="s0">userkey</span><span class="s2">) {</span>
+    <span class="s1">let </span><span class="s0">bytes </span><span class="s2">= </span><span class="s0">CryptoJS</span><span class="s2">.</span><span class="s0">AES</span><span class="s2">.</span><span class="s0">decrypt</span><span class="s2">(</span><span class="s0">encrypted</span><span class="s2">.</span><span class="s0">toString</span><span class="s2">(), </span><span class="s0">userkey</span><span class="s2">.</span><span class="s0">toString</span><span class="s2">());</span>
+    <span class="s1">return </span><span class="s0">bytes</span><span class="s2">.</span><span class="s0">toString</span><span class="s2">(</span><span class="s0">CryptoJS</span><span class="s2">.</span><span class="s0">enc</span><span class="s2">.</span><span class="s0">Utf8</span><span class="s2">);</span>
+}
+
+<span class="s1">function </span><span class="s0">encrypt</span><span class="s2">(</span><span class="s0">plaintext</span><span class="s2">, </span><span class="s0">userkey</span><span class="s2">) {</span>
+    <span class="s1">return </span><span class="s0">CryptoJS</span><span class="s2">.</span><span class="s0">AES</span><span class="s2">.</span><span class="s0">encrypt</span><span class="s2">(</span><span class="s0">plaintext</span><span class="s2">, </span><span class="s0">userkey</span><span class="s2">)</span>
+}
+
+<span class="s0">app</span><span class="s2">.</span><span class="s0">get</span><span class="s2">(</span><span class="s3">&quot;/&quot;</span><span class="s2">, (</span><span class="s0">req</span><span class="s2">, </span><span class="s0">res</span><span class="s2">) =&gt; {</span>
+    <span class="s0">res</span><span class="s2">.</span><span class="s0">redirect</span><span class="s2">(</span><span class="s3">&quot;http://localhost:3000&quot;</span><span class="s2">);</span>
+    <span class="s0">res</span><span class="s2">.</span><span class="s0">status</span><span class="s2">(</span><span class="s4">200</span><span class="s2">);</span>
+});
+<span class="s0">app</span><span class="s2">.</span><span class="s0">post</span><span class="s2">(</span><span class="s3">&quot;/login&quot;</span><span class="s2">, </span><span class="s0">urlencodedparser</span><span class="s2">, (</span><span class="s0">req</span><span class="s2">, </span><span class="s0">res</span><span class="s2">) =&gt; {</span>
+    <span class="s1">let </span><span class="s0">username </span><span class="s2">= </span><span class="s0">req</span><span class="s2">.</span><span class="s0">body</span><span class="s2">.</span><span class="s0">user</span><span class="s2">;</span>
+    <span class="s1">let </span><span class="s0">pass </span><span class="s2">= </span><span class="s0">req</span><span class="s2">.</span><span class="s0">body</span><span class="s2">.</span><span class="s0">pass</span><span class="s2">;</span>
+        <span class="s1">let </span><span class="s0">query </span><span class="s2">= </span><span class="s3">&quot;SELECT Password FROM User WHERE Username = &quot; </span><span class="s2">+ </span><span class="s0">mysql</span><span class="s2">.</span><span class="s0">escape</span><span class="s2">(</span><span class="s0">username</span><span class="s2">);</span>
+        <span class="s0">con</span><span class="s2">.</span><span class="s0">query</span><span class="s2">(</span><span class="s0">query</span><span class="s2">, </span><span class="s1">function </span><span class="s2">(</span><span class="s0">err</span><span class="s2">, </span><span class="s0">result</span><span class="s2">) {</span>
+            <span class="s1">if </span><span class="s2">(</span><span class="s0">err</span><span class="s2">) </span><span class="s1">throw </span><span class="s0">err</span><span class="s2">;</span>
+            <span class="s1">let </span><span class="s0">password </span><span class="s2">= </span><span class="s0">result</span><span class="s2">[</span><span class="s4">0</span><span class="s2">].</span><span class="s0">Password</span><span class="s2">;</span>
+            <span class="s1">let </span><span class="s0">plainpass </span><span class="s2">= </span><span class="s0">decrypt</span><span class="s2">(</span><span class="s0">password</span><span class="s2">,</span><span class="s0">username</span><span class="s2">);</span>
+            <span class="s1">let </span><span class="s0">bool</span><span class="s2">;</span>
+            <span class="s1">if </span><span class="s2">(</span><span class="s0">plainpass </span><span class="s2">=== </span><span class="s0">pass</span><span class="s2">) {</span>
+                 <span class="s0">bool </span><span class="s2">= </span><span class="s1">true</span>
+            <span class="s2">}</span><span class="s1">else </span><span class="s2">{</span>
+                 <span class="s0">bool </span><span class="s2">= </span><span class="s1">false</span>
+            <span class="s2">}</span>
+            <span class="s0">res</span><span class="s2">.</span><span class="s0">send</span><span class="s2">(</span><span class="s0">bool</span><span class="s2">)</span>
+        });
+
+});
+<span class="s0">app</span><span class="s2">.</span><span class="s0">post</span><span class="s2">(</span><span class="s3">&quot;/signup&quot;</span><span class="s2">,</span><span class="s0">urlencodedparser</span><span class="s2">, (</span><span class="s0">req</span><span class="s2">, </span><span class="s0">res</span><span class="s2">) =&gt; {</span>
+    <span class="s1">let </span><span class="s0">username </span><span class="s2">= </span><span class="s0">req</span><span class="s2">.</span><span class="s0">body</span><span class="s2">.</span><span class="s0">user</span><span class="s2">;</span>
+    <span class="s1">let </span><span class="s0">pass </span><span class="s2">= </span><span class="s0">req</span><span class="s2">.</span><span class="s0">body</span><span class="s2">.</span><span class="s0">pass</span><span class="s2">;</span>
+    <span class="s1">let </span><span class="s0">email </span><span class="s2">= </span><span class="s0">req</span><span class="s2">.</span><span class="s0">body</span><span class="s2">.</span><span class="s0">email</span><span class="s2">;</span>
+    <span class="s1">const </span><span class="s0">link </span><span class="s2">= (</span><span class="s3">&quot;http://192.168.0.6:8081/new?user=&quot;</span><span class="s2">+</span><span class="s0">username</span><span class="s2">+</span><span class="s3">&quot;&amp;&amp;pass=&quot;</span><span class="s2">+</span><span class="s0">pass</span><span class="s2">+</span><span class="s3">&quot;&amp;&amp;email=&quot;</span><span class="s2">+</span><span class="s0">email</span><span class="s2">).</span><span class="s0">toString</span><span class="s2">();</span>
+    <span class="s1">const </span><span class="s0">mailOptions </span><span class="s2">= {</span>
+        <span class="s0">from</span><span class="s2">: </span><span class="s3">'redpandamc85@gmail.com'</span><span class="s2">,</span>
+        <span class="s0">to</span><span class="s2">: </span><span class="s0">email</span><span class="s2">,</span>
+        <span class="s0">subject</span><span class="s2">: </span><span class="s3">'Sign Up Verification Code:'</span><span class="s2">,</span>
+        <span class="s0">html</span><span class="s2">: </span><span class="s3">&quot;&lt;h1&gt;Verify your account here:&lt;/h1&gt;&lt;br&gt;&lt;a style='font-size: 20px;' href=&quot;</span><span class="s2">+</span><span class="s0">link</span><span class="s2">+</span><span class="s3">&quot;&gt;Verify Here&lt;/a&gt;&quot;</span>
+    <span class="s2">};</span>
+    <span class="s0">transporter</span><span class="s2">.</span><span class="s0">sendMail</span><span class="s2">(</span><span class="s0">mailOptions</span><span class="s2">, </span><span class="s1">function</span><span class="s2">(</span><span class="s0">error</span><span class="s2">, </span><span class="s0">info</span><span class="s2">){</span>
+        <span class="s1">if </span><span class="s2">(</span><span class="s0">error</span><span class="s2">) {</span>
+            <span class="s0">console</span><span class="s2">.</span><span class="s0">log</span><span class="s2">(</span><span class="s0">error</span><span class="s2">);</span>
+            <span class="s0">res</span><span class="s2">.</span><span class="s0">status</span><span class="s2">(</span><span class="s4">500</span><span class="s2">).</span><span class="s0">send</span><span class="s2">();</span>
+        } <span class="s1">else </span><span class="s2">{</span>
+            <span class="s0">console</span><span class="s2">.</span><span class="s0">log</span><span class="s2">(</span><span class="s3">'Email sent: ' </span><span class="s2">+ </span><span class="s0">info</span><span class="s2">.</span><span class="s0">response</span><span class="s2">);</span>
+            <span class="s0">res</span><span class="s2">.</span><span class="s0">send</span><span class="s2">(</span><span class="s1">true</span><span class="s2">)</span>
+        }
+    });
+
+});
+<span class="s0">app</span><span class="s2">.</span><span class="s0">get</span><span class="s2">(</span><span class="s3">&quot;/new&quot;</span><span class="s2">, (</span><span class="s0">req</span><span class="s2">, </span><span class="s0">res</span><span class="s2">) =&gt; {</span>
+    <span class="s1">const </span><span class="s0">user </span><span class="s2">= </span><span class="s0">req</span><span class="s2">.</span><span class="s0">query</span><span class="s2">.</span><span class="s0">user</span><span class="s2">;</span>
+    <span class="s1">const </span><span class="s0">pass </span><span class="s2">= </span><span class="s0">req</span><span class="s2">.</span><span class="s0">query</span><span class="s2">.</span><span class="s0">pass</span><span class="s2">;</span>
+    <span class="s1">let </span><span class="s0">email </span><span class="s2">= </span><span class="s0">req</span><span class="s2">.</span><span class="s0">query</span><span class="s2">.</span><span class="s0">email</span><span class="s2">;</span>
+    <span class="s0">email </span><span class="s2">= </span><span class="s0">email</span><span class="s2">.</span><span class="s0">toString</span><span class="s2">();</span>
+    <span class="s1">let </span><span class="s0">cipherpass </span><span class="s2">= </span><span class="s0">encrypt</span><span class="s2">(</span><span class="s0">pass</span><span class="s2">,</span><span class="s0">user</span><span class="s2">);</span>
+    <span class="s1">const </span><span class="s0">sql </span><span class="s2">= </span><span class="s3">&quot;INSERT INTO User (Username, Email, Password) VALUES ('&quot;</span><span class="s2">+</span><span class="s0">user</span><span class="s2">+</span><span class="s3">&quot;', '&quot;</span><span class="s2">+</span><span class="s0">email</span><span class="s2">+</span><span class="s3">&quot;','&quot;</span><span class="s2">+</span><span class="s0">cipherpass</span><span class="s2">+</span><span class="s3">&quot;')&quot;</span><span class="s2">;</span>
+    <span class="s0">con</span><span class="s2">.</span><span class="s0">query</span><span class="s2">(</span><span class="s0">sql</span><span class="s2">, (</span><span class="s0">err</span><span class="s2">,</span><span class="s0">result</span><span class="s2">) =&gt; {</span>
+        <span class="s1">if </span><span class="s2">(</span><span class="s0">err</span><span class="s2">) </span><span class="s1">throw </span><span class="s0">err</span><span class="s2">;</span>
+        <span class="s0">res</span><span class="s2">.</span><span class="s0">status</span><span class="s2">(</span><span class="s4">200</span><span class="s2">).</span><span class="s0">send</span><span class="s2">(</span><span class="s1">true</span><span class="s2">);</span>
+    })
+
+});
+<span class="s1">const </span><span class="s0">server </span><span class="s2">= </span><span class="s0">app</span><span class="s2">.</span><span class="s0">listen</span><span class="s2">(</span><span class="s4">8081</span><span class="s2">, </span><span class="s1">function </span><span class="s2">() {</span>
+    <span class="s1">const </span><span class="s0">host </span><span class="s2">= </span><span class="s0">server</span><span class="s2">.</span><span class="s0">address</span><span class="s2">().</span><span class="s0">address</span><span class="s2">;</span>
+    <span class="s1">const </span><span class="s0">port </span><span class="s2">= </span><span class="s0">server</span><span class="s2">.</span><span class="s0">address</span><span class="s2">().</span><span class="s0">port</span><span class="s2">;</span>
+    <span class="s0">console</span><span class="s2">.</span><span class="s0">log</span><span class="s2">(</span><span class="s3">&quot;Example app listening at http://%s:%s&quot;</span><span class="s2">, </span><span class="s0">host</span><span class="s2">, </span><span class="s0">port</span><span class="s2">)</span>
+
+});</pre>
+</body>
+</html>

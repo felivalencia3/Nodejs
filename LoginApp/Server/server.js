@@ -1,4 +1,4 @@
-
+const unirest = require("unirest");
 const MySQL = require("MySQL");
 const nodemailer = require("nodemailer");
 const express = require("express");
@@ -19,7 +19,6 @@ const transporter = nodemailer.createTransport({
         pass: 'helpingoTES'
     }
 });
-app.use(express.static("../public"));
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
@@ -36,7 +35,7 @@ function encrypt(plaintext, userkey) {
 }
 
 app.get("/", (req, res) => {
-    res.redirect("/index");
+    res.redirect("http://localhost:3000");
     res.status(200);
 });
 app.post("/login", urlencodedparser, (req, res) => {
@@ -61,6 +60,7 @@ app.post("/signup",urlencodedparser, (req, res) => {
     let username = req.body.user;
     let pass = req.body.pass;
     let email = req.body.email;
+
     const link = ("http://192.168.0.6:8081/new?user="+username+"&&pass="+pass+"&&email="+email).toString();
     const mailOptions = {
         from: 'redpandamc85@gmail.com',
@@ -88,7 +88,7 @@ app.get("/new", (req, res) => {
     const sql = "INSERT INTO User (Username, Email, Password) VALUES ('"+user+"', '"+email+"','"+cipherpass+"')";
     con.query(sql, (err,result) => {
         if (err) throw err;
-        res.status(200).send(true);
+        res.redirect("http://www.google.com")
     })
 
 });
