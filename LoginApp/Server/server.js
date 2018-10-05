@@ -1,5 +1,6 @@
 const unirest = require("unirest");
 const MySQL = require("MySQL");
+const querystring = require("querystring");
 const nodemailer = require("nodemailer");
 const express = require("express");
 const app = express();
@@ -56,33 +57,64 @@ app.post("/login", urlencodedparser, (req, res) => {
         });
 
 });
+/*
+
+            if(result.body.isValid === "true" || result.body.isValid === true) {
+                const link = ("http://192.168.0.6:8081/new?user="+username+"&&pass="+pass+"&&email="+rawemail).toString();
+                const mailOptions = {
+                    from: 'redpandamc85@gmail.com',
+                    to: rawemail,
+                    subject: 'Sign Up Verification Code:',
+                    html: "<h1>Verify your account here:</h1><br><a style='font-size: 20px;' href="+link+">Verify Here</a>"
+                };
+                transporter.sendMail(mailOptions, function(error, info){
+                    if (error) {
+                        console.log(error);
+                        res.status(500).send();
+                    } else {
+                        console.log('Email sent: ' + info.response);
+                        res.send(true)
+                    }
+                })
+            }
+
+ */
 app.post("/signup",urlencodedparser, (req, res) => {
+    console.log(req.body);
     let username = req.body.user;
     let pass = req.body.pass;
-    let email = req.body.email;
-
-    const link = ("http://192.168.0.6:8081/new?user="+username+"&&pass="+pass+"&&email="+email).toString();
-    const mailOptions = {
-        from: 'redpandamc85@gmail.com',
-        to: email,
-        subject: 'Sign Up Verification Code:',
-        html: "<h1>Verify your account here:</h1><br><a style='font-size: 20px;' href="+link+">Verify Here</a>"
-    };
-    transporter.sendMail(mailOptions, function(error, info){
-        if (error) {
-            console.log(error);
-            res.status(500).send();
-        } else {
-            console.log('Email sent: ' + info.response);
-            res.send(true)
-        }
-    });
+    let rawemail = req.body.email;
+    let email = querystring.stringify({email: rawemail});
+    const index = email.indexOf("=");
+    const substr = email.substring(index+1);
+    unirest.get("https://pozzad-email-validator.p.mashape.com/emailvalidator/validateEmail/"+substr)
+        .header("X-Mashape-Key", "VpMzHMZ1EXmshUE9D9Z1yz06AoC5p1xYgPfjsnS4lRQl5q9DJc")
+        .header("Accept", "application/json")
+        .end(function (result) {
+            if(result.body.isValid === "true" || result.body.isValid === true) {
+                const link = ("http://192.168.0.6:8081/new?user="+username+"&&pass="+pass+"&&email="+rawemail).toString();
+                const mailOptions = {
+                    from: 'redpandamc85@gmail.com',
+                    to: rawemail,
+                    subject: 'Sign Up Verification Code:',
+                    html: "<h1>Verify your account here:</h1><br><a style='font-size: 20px;' href="+link+">Verify Here</a>"
+                };
+                transporter.sendMail(mailOptions, function(error, info){
+                    if (error) {
+                        console.log(error);
+                        res.status(500).send();
+                    } else {
+                        console.log('Email sent: ' + info.response);
+                        res.send(true)
+                    }
+                })
+            }
+        });
 
 });
+
 app.get("/new", (req, res) => {
-    const user = req.query.user;
-    const pass = req.query.pass;
-    let email = req.query.email;
+    const uail = req.query.email;
     email = email.toString();
     let cipherpass = encrypt(pass,user);
     const sql = "INSERT INTO User (Username, Email, Password) VALUES ('"+user+"', '"+email+"','"+cipherpass+"')";

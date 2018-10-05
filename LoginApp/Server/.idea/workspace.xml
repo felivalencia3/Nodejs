@@ -2,60 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c38bd4fb-cc57-4581-ae4d-8814525eb314" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Client/loginapp/src/Main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Blog-Engine/Blog_Expressjs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Blog-Engine/Blog_Expressjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/loginapp/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/loginapp/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/loginapp/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/loginapp/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/aes-js/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/aes-js/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/aes-js/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/aes-js/generate-tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/aes-js/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/aes-js/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/aes-js/test/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/aes-js/test/test-aes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/aes-js/test/test-buffer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/aes-js/test/test-counter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/aes-js/test/test-errors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/aes-js/test/test-padding.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/aes-js/test/test-vectors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/aes-js/test/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/body-parser/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/body-parser/HISTORY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/body-parser/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/body-parser/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/body-parser/lib/types/json.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/body-parser/lib/types/json.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/body-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/body-parser/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/Changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/Changelog.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/dbcs-codec.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/dbcs-codec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/internal.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/internal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/sbcs-codec.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/sbcs-codec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/utf16.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/utf16.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/utf7.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/encodings/utf7.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/lib/extend-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/lib/extend-node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/lib/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/raw-body/HISTORY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/raw-body/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/node_modules/depd/History.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/node_modules/depd/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/node_modules/depd/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/node_modules/depd/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/node_modules/depd/lib/browser/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/node_modules/depd/lib/compat/callsite-tostring.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/node_modules/depd/lib/compat/event-listener-count.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/node_modules/depd/lib/compat/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/node_modules/depd/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/node_modules/http-errors/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/node_modules/http-errors/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/node_modules/http-errors/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/node_modules/http-errors/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/node_modules/http-errors/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/node_modules/setprototypeof/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/node_modules/setprototypeof/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/node_modules/setprototypeof/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/node_modules/setprototypeof/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/raw-body/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -71,18 +22,19 @@
     <session id="1813608146">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="http" value="1" />
-          <entry key="js" value="40" />
+          <entry key="js" value="42" />
           <entry key="json" value="3" />
           <entry key="md" value="1" />
         </counts>
@@ -91,15 +43,15 @@
         <counts>
           <entry key="HTTP Request" value="1" />
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="36" />
+          <entry key="JavaScript" value="37" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Scratch" value="4" />
+          <entry key="Scratch" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="http" value="11" />
-          <entry key="js" value="4506" />
+          <entry key="js" value="4516" />
           <entry key="json" value="1" />
           <entry key="txt" value="13" />
         </counts>
@@ -109,7 +61,7 @@
           <entry key="HTML" value="1" />
           <entry key="HTTP Request" value="11" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="4370" />
+          <entry key="JavaScript" value="4380" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="Scratch" value="135" />
         </counts>
@@ -121,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state relative-caret-position="436">
+              <caret line="95" column="37" lean-forward="true" selection-start-line="95" selection-start-column="37" selection-end-line="95" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
               </folding>
@@ -176,9 +128,10 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="1280" />
+    <option name="width" value="1179" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -188,7 +141,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,16 +148,27 @@
               <item name="Server" type="b2602c69:ProjectViewProjectNode" />
               <item name="Server" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="Server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.11.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -224,7 +187,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.server.js">
+  <component name="RunManager" selected="Node.js.scratch.js">
     <configuration name="post_router.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="post_router.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -241,8 +204,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.server.js" />
         <item itemvalue="Node.js.scratch.js" />
+        <item itemvalue="Node.js.server.js" />
         <item itemvalue="Node.js.post_router.js" />
       </list>
     </recent_temporary>
@@ -261,20 +224,21 @@
       <workItem from="1537916612071" duration="2508000" />
       <workItem from="1537999080185" duration="7783000" />
       <workItem from="1538084507251" duration="477000" />
+      <workItem from="1538695099348" duration="1305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14204000" />
+    <option name="totallyTimeSpent" value="15509000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="1280" y="0" width="1179" height="1050" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36125" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36095238" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -287,7 +251,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" x="494" y="0" width="292" height="800" id="Project" order="3" side_tool="true" visible="true" weight="0.228125" />
+      <window_info active="true" anchor="right" content_ui="combo" x="494" y="0" width="292" height="800" id="Project" order="3" side_tool="true" visible="true" weight="0.18320611" />
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -333,15 +297,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/MySQL.js" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.js" />
     <entry file="file://$PROJECT_DIR$/MySQL.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/nodemailer/README.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="436">
+          <caret line="95" column="37" lean-forward="true" selection-start-line="95" selection-start-column="37" selection-end-line="95" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
           </folding>

@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import querystring from 'querystring';
+import "./Main.css"
 export default class App extends React.Component {
     constructor(props) {
         super(props);
@@ -22,8 +23,15 @@ export default class App extends React.Component {
         const screen = this.state.screen;
         let form;
         if(screen === "index") {
-            form = <div><button onClick={this.handleLoginClick}>Login</button><button onClick={this.handleSignUpClick}>Sign-Up</button></div>
+            form = <div id="particles">
+                <div id="webcoderskull">
+                <div className="bg-text">
+                <button onClick={this.handleLoginClick} className="button"><span>Login </span></button>
+            <button className="button" onClick={this.handleSignUpClick}><span>Sign-Up </span></button></div>
+            </div>
+        </div>
         } else if (screen === "login") {
+
             form = <div><Login /><button onClick={this.handleBackClick}>Back</button></div>
         } else if (screen === "sign") {
             form = <div><SignUp /><button onClick={this.handleBackClick}>Back</button></div>
@@ -40,7 +48,7 @@ class Login extends React.Component {
         this.handleChangeUser = this.handleChangeUser.bind(this);
     }
     handleSubmit(event) {
-        axios.post("http://192.168.0.6:8081/login",
+        axios.post("http://127.0.0.1:8081/login",
             querystring.stringify({
                 user: this.state.user,
                 pass: this.state.pass
@@ -64,9 +72,9 @@ class Login extends React.Component {
         return (
             <form onSubmit={this.handleSubmit}>
                 <h1>Username</h1>
-                <input value={this.state.user} id="user" name="user" onChange={this.handleChangeUser}/>
+                <input value={this.state.user} id="user" name="user" onChange={this.handleChangeUser} autoCapitalize="false" autoComplete="false" autoCorrect="false"/>
                 <h1>Password:</h1>
-                <input value={this.state.pass} id="pass" name="pass" onChange={this.handleChangePass}/>
+                <input value={this.state.pass} id="pass" name="pass" onChange={this.handleChangePass} autoCapitalize="false" autoComplete="false" autoCorrect="false"/>
                 <br />
                 <br />
                 <input type="submit" value="Submit" />
@@ -97,15 +105,17 @@ class SignUp extends React.Component {
         this.setState({pass: event.target.value})
     }
     handleSubmit(event) {
+        alert("Submitted!");
         const user = this.state.user;
         const email = this.state.email;
         const pass = this.state.pass;
         const check = this.state.check;
         if (pass === check) {
-            axios.post("http://192.168.0.6:8081/signup",
+            axios.post("http://127.0.0.1:8081/signup",
                 querystring.stringify({
                     user: this.state.user,
-                    pass: this.state.pass
+                    pass: this.state.pass,
+                    email: this.state.email
                 }), {
                     headers: {
                         "Content-Type": "application/x-www-form-urlencoded"
@@ -124,13 +134,13 @@ class SignUp extends React.Component {
     render() {
         return (<form onSubmit={this.handleSubmit}>
             <h1>Username:</h1>
-            <input value={this.state.user} id="user" name="user" onChange={this.handleChangeUser}/>
+            <input value={this.state.user} id="user" name="user" onChange={this.handleChangeUser} autoCapitalize="false" autoComplete="false" autoCorrect="false"/>
             <h1>Email:</h1>
-            <input value={this.state.email} name="email" onChange={this.handleEmail}/>
+            <input value={this.state.email} name="email" onChange={this.handleEmail} autoCapitalize="false" autoComplete="false" autoCorrect="false"/>
             <h1>Password: </h1>
-            <input value={this.state.pass} name="pass" type="password" onChange={this.handlePass}/>
+            <input value={this.state.pass} name="pass" type="password" onChange={this.handlePass}  autoCapitalize="false" autoComplete="false" autoCorrect="false"/>
             <h1>Retype Password:</h1>
-            <input value={this.state.check} name="check" type="password" onChange={this.handlePassCheck}/>
+            <input value={this.state.check} name="check" type="password" onChange={this.handlePassCheck} autoCapitalize="false" autoComplete="false" autoCorrect="false"/>
             <input type="submit" value="Submit"/>
         </form>)
     }
