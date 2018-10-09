@@ -2,9 +2,385 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef16743a-bb56-431b-a4a8-60bc5d5134ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Client/loginapp/src/Main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Blog-Engine/Blog_Expressjs" beforeDir="false" afterPath="$PROJECT_DIR$/../Blog-Engine/Blog_Expressjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/loginapp/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Client/loginapp/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/.idea/Full-Stack-App(Express-EJS).iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/.idea/runConfigurations/bin_www.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/bin/www" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/.bin/mime" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/accepts/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/accepts/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/accepts/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/accepts/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/accepts/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/array-flatten/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/array-flatten/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/array-flatten/array-flatten.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/array-flatten/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/basic-auth/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/basic-auth/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/basic-auth/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/basic-auth/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/basic-auth/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/body-parser/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/body-parser/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/body-parser/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/body-parser/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/body-parser/lib/read.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/body-parser/lib/types/json.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/body-parser/lib/types/raw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/body-parser/lib/types/text.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/body-parser/lib/types/urlencoded.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/body-parser/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/bytes/History.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/bytes/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/bytes/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/bytes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/bytes/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/content-disposition/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/content-disposition/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/content-disposition/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/content-disposition/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/content-disposition/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/content-type/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/content-type/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/content-type/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/content-type/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/content-type/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/cookie-parser/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/cookie-parser/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/cookie-parser/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/cookie-parser/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/cookie-parser/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/cookie-signature/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/cookie-signature/History.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/cookie-signature/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/cookie-signature/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/cookie-signature/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/cookie/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/cookie/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/cookie/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/cookie/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/cookie/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/debug/.coveralls.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/debug/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/debug/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/debug/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/debug/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/debug/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/debug/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/debug/component.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/debug/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/debug/node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/debug/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/debug/src/browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/debug/src/debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/debug/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/debug/src/inspector-log.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/debug/src/node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/depd/History.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/depd/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/depd/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/depd/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/depd/lib/browser/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/depd/lib/compat/callsite-tostring.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/depd/lib/compat/event-listener-count.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/depd/lib/compat/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/depd/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/destroy/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/destroy/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/destroy/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/destroy/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ee-first/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ee-first/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ee-first/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ee-first/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ejs/Jakefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ejs/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ejs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ejs/ejs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ejs/ejs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ejs/lib/ejs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ejs/lib/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ejs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/encodeurl/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/encodeurl/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/encodeurl/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/encodeurl/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/encodeurl/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/escape-html/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/escape-html/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/escape-html/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/escape-html/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/etag/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/etag/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/etag/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/etag/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/etag/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/express/History.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/express/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/express/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/express/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/express/lib/application.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/express/lib/express.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/express/lib/middleware/init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/express/lib/middleware/query.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/express/lib/request.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/express/lib/response.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/express/lib/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/express/lib/router/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/express/lib/router/route.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/express/lib/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/express/lib/view.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/express/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/finalhandler/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/finalhandler/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/finalhandler/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/finalhandler/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/finalhandler/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/forwarded/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/forwarded/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/forwarded/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/forwarded/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/forwarded/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/fresh/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/fresh/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/fresh/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/fresh/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/fresh/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/http-errors/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/http-errors/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/http-errors/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/http-errors/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/http-errors/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/Changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/encodings/dbcs-codec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/encodings/dbcs-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/encodings/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/encodings/internal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/encodings/sbcs-codec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/encodings/sbcs-data-generated.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/encodings/sbcs-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/encodings/tables/big5-added.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/encodings/tables/cp936.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/encodings/tables/cp949.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/encodings/tables/cp950.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/encodings/tables/eucjp.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/encodings/tables/gbk-added.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/encodings/tables/shiftjis.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/encodings/utf16.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/encodings/utf7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/lib/bom-handling.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/lib/extend-node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/lib/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/lib/streams.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/iconv-lite/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/inherits/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/inherits/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/inherits/inherits.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/inherits/inherits_browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/inherits/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ipaddr.js/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ipaddr.js/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ipaddr.js/Cakefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ipaddr.js/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ipaddr.js/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ipaddr.js/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ipaddr.js/ipaddr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ipaddr.js/lib/ipaddr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ipaddr.js/lib/ipaddr.js.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ipaddr.js/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ipaddr.js/src/ipaddr.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ipaddr.js/test/ipaddr.test.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/media-typer/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/media-typer/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/media-typer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/media-typer/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/media-typer/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/merge-descriptors/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/merge-descriptors/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/merge-descriptors/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/merge-descriptors/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/merge-descriptors/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/methods/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/methods/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/methods/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/methods/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/methods/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/mime-db/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/mime-db/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/mime-db/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/mime-db/db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/mime-db/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/mime-db/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/mime-types/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/mime-types/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/mime-types/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/mime-types/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/mime-types/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/mime/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/mime/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/mime/build/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/mime/build/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/mime/cli.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/mime/mime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/mime/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/mime/types.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/morgan/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/morgan/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/morgan/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/morgan/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/morgan/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ms/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ms/license.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ms/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/ms/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/negotiator/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/negotiator/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/negotiator/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/negotiator/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/negotiator/lib/charset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/negotiator/lib/encoding.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/negotiator/lib/language.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/negotiator/lib/mediaType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/negotiator/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/on-finished/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/on-finished/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/on-finished/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/on-finished/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/on-finished/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/on-headers/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/on-headers/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/on-headers/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/on-headers/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/on-headers/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/parseurl/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/parseurl/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/parseurl/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/parseurl/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/parseurl/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/path-to-regexp/History.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/path-to-regexp/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/path-to-regexp/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/path-to-regexp/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/path-to-regexp/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/proxy-addr/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/proxy-addr/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/proxy-addr/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/proxy-addr/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/proxy-addr/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/qs/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/qs/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/qs/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/qs/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/qs/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/qs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/qs/dist/qs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/qs/lib/formats.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/qs/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/qs/lib/parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/qs/lib/stringify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/qs/lib/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/qs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/qs/test/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/qs/test/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/qs/test/parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/qs/test/stringify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/qs/test/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/range-parser/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/range-parser/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/range-parser/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/range-parser/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/range-parser/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/node_modules/depd/History.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/node_modules/depd/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/node_modules/depd/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/node_modules/depd/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/node_modules/depd/lib/browser/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/node_modules/depd/lib/compat/callsite-tostring.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/node_modules/depd/lib/compat/event-listener-count.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/node_modules/depd/lib/compat/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/node_modules/depd/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/node_modules/http-errors/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/node_modules/http-errors/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/node_modules/http-errors/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/node_modules/http-errors/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/node_modules/http-errors/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/node_modules/setprototypeof/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/node_modules/setprototypeof/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/node_modules/setprototypeof/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/node_modules/setprototypeof/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/raw-body/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/safe-buffer/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/safe-buffer/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/safe-buffer/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/safe-buffer/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/safe-buffer/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/safe-buffer/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/send/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/send/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/send/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/send/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/send/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/serve-static/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/serve-static/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/serve-static/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/serve-static/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/serve-static/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/setprototypeof/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/setprototypeof/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/setprototypeof/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/setprototypeof/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/setprototypeof/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/statuses/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/statuses/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/statuses/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/statuses/codes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/statuses/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/statuses/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/type-is/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/type-is/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/type-is/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/type-is/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/type-is/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/unpipe/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/unpipe/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/unpipe/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/unpipe/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/unpipe/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/utils-merge/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/utils-merge/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/utils-merge/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/utils-merge/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/utils-merge/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/vary/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/vary/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/vary/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/vary/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/node_modules/vary/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/public/stylesheets/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/routes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/views/error.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Full-Stack-App(Express-EJS)/views/index.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/loginapp/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Client/loginapp/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/server.js" afterDir="false" />
@@ -26,21 +402,22 @@
     <session id="1325865872">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="21" />
           <entry key="html" value="18" />
-          <entry key="js" value="75" />
+          <entry key="js" value="77" />
           <entry key="json" value="1" />
           <entry key="svg" value="1" />
         </counts>
@@ -50,7 +427,7 @@
           <entry key="CSS" value="21" />
           <entry key="HTML" value="18" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="72" />
+          <entry key="JavaScript" value="74" />
           <entry key="SVG" value="1" />
           <entry key="Scratch" value="3" />
         </counts>
@@ -59,7 +436,7 @@
         <counts>
           <entry key="css" value="361" />
           <entry key="html" value="274" />
-          <entry key="js" value="6276" />
+          <entry key="js" value="6460" />
           <entry key="txt" value="44" />
         </counts>
       </usages-collector>
@@ -67,7 +444,7 @@
         <counts>
           <entry key="CSS" value="361" />
           <entry key="HTML" value="274" />
-          <entry key="JavaScript" value="5923" />
+          <entry key="JavaScript" value="6107" />
           <entry key="PLAIN_TEXT" value="44" />
           <entry key="Scratch" value="353" />
         </counts>
@@ -80,10 +457,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Client/loginapp/src/Main.css">
+        <entry file="file://$PROJECT_DIR$/Client/loginapp/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+            <state relative-caret-position="-1039">
+              <caret line="59" column="49" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -109,10 +486,10 @@
         <option value="$PROJECT_DIR$/Client/index.html" />
         <option value="$PROJECT_DIR$/Client/loginapp/src/index.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.js" />
-        <option value="$PROJECT_DIR$/Server/server.js" />
-        <option value="$PROJECT_DIR$/Client/loginapp/src/App.js" />
         <option value="$PROJECT_DIR$/Client/loginapp/public/index.html" />
         <option value="$PROJECT_DIR$/Client/loginapp/src/Main.css" />
+        <option value="$PROJECT_DIR$/Server/server.js" />
+        <option value="$PROJECT_DIR$/Client/loginapp/src/App.js" />
       </list>
     </option>
   </component>
@@ -146,7 +523,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,6 +583,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -220,7 +597,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -246,6 +623,16 @@
     <configuration name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/Server">
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/Client/loginapp/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/Client/loginapp/package.json" />
       <command value="run" />
@@ -260,11 +647,13 @@
       <item itemvalue="Node.js.server.js" />
       <item itemvalue="Node.js.scratch.js" />
       <item itemvalue="npm.start" />
+      <item itemvalue="npm.build" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="Node.js.server.js" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
         <item itemvalue="Node.js.scratch.js" />
       </list>
     </recent_temporary>
@@ -285,6 +674,9 @@
       <workItem from="1538505242684" duration="1421000" />
       <workItem from="1538664660812" duration="2029000" />
       <workItem from="1538693780557" duration="6412000" />
+      <workItem from="1538745263430" duration="217000" />
+      <workItem from="1538749909578" duration="759000" />
+      <workItem from="1539045632631" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="Started Client App">
       <created>1538088598483</created>
@@ -311,15 +703,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22517000" />
+    <option name="totallyTimeSpent" value="23520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49440297" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49253732" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.505597" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="3" sideWeight="0.505597" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="3" sideWeight="0.5074627" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -379,13 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="93" column="41" lean-forward="true" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/loginapp/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -400,20 +786,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/loginapp/src/App.js">
+    <entry file="file://$PROJECT_DIR$/Client/loginapp/src/Main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="226">
+          <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/loginapp/src/Main.css">
+    <entry file="file://$PROJECT_DIR$/Server/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+        <state relative-caret-position="1895">
+          <caret line="117" column="30" selection-start-line="117" selection-start-column="30" selection-end-line="117" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/loginapp/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1039">
+          <caret line="59" column="49" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
         </state>
       </provider>
     </entry>

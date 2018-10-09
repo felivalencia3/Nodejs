@@ -92,7 +92,7 @@ app.post("/signup",urlencodedparser, (req, res) => {
         .header("Accept", "application/json")
         .end(function (result) {
             if(result.body.isValid === "true" || result.body.isValid === true) {
-                const link = ("http://192.168.0.6:8081/new?user="+username+"&&pass="+pass+"&&email="+rawemail).toString();
+                const link = ("http://172.16.2.52:8081/new?user="+username+"&&pass="+pass+"&&email="+rawemail).toString();
                 const mailOptions = {
                     from: 'redpandamc85@gmail.com',
                     to: rawemail,
@@ -114,7 +114,9 @@ app.post("/signup",urlencodedparser, (req, res) => {
 });
 
 app.get("/new", (req, res) => {
-    const uail = req.query.email;
+    let user = req.query.user;
+    let pass = req.query.pass;
+    let email = req.query.email;
     email = email.toString();
     let cipherpass = encrypt(pass,user);
     const sql = "INSERT INTO User (Username, Email, Password) VALUES ('"+user+"', '"+email+"','"+cipherpass+"')";

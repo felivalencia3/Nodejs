@@ -57,8 +57,9 @@ class Login extends React.Component {
                     "Content-Type": "application/x-www-form-urlencoded"
                 }
             }).then(function(response) {
-                alert(JSON.stringify(response.data));
-                console.log(response);
+                if (response.data === true || response.data === "true") {
+                    window.open("http://www.google.com")
+                }
         });
         event.preventDefault()
     }
