@@ -25,6 +25,7 @@ app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
 });
+
 let urlencodedparser = bodyparser.urlencoded({extended: false});
 function decrypt(encrypted, userkey) {
     let bytes = CryptoJS.AES.decrypt(encrypted.toString(), userkey.toString());
@@ -34,7 +35,6 @@ function decrypt(encrypted, userkey) {
 function encrypt(plaintext, userkey) {
     return CryptoJS.AES.encrypt(plaintext, userkey)
 }
-
 app.get("/", (req, res) => {
     res.redirect("http://localhost:3000");
     res.status(200);
