@@ -1,0 +1,21 @@
+{
+  "name": "RecipeBackEnd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "dev:debug": "nodemon server.js --inspect",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "latest",
+    "sequelize": "latest",
+    "body-parser": "latest",
+    "axios": "latest",
+    "cloudinary": "latest"
+  }
+}
