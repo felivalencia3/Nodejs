@@ -43,6 +43,27 @@ app.post("/new",urlencoded,(req,res) => {
       });
       res.status(200).send(true)
 })
+app.post("/check",urlencoded,(req,res) => {
+    const answer = req.body.answer,
+    question = req.body.question
+    Question.findAll({where: {Answer: answer}})
+    .then(verify => {
+        console.log("Verify:"+verify)
+        if(verify[0]) {
+            res.send(true)
+        }
+        else {
+            res.send(false)
+        }
+    })
+})
+app.get("/questions",(req,res) => {
+    const teacher = req.query.id;
+    Question.findAll({where: {Teacher:teacher}})
+    .then(question => {
+        res.send(question)
+    })
+})
 app.listen(8081,()=>{
     console.log("App is running on port 8081")
 })
