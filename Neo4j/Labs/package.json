@@ -1,0 +1,15 @@
+{
+  "name": "neo4j-labs",
+  "version": "1.0.0",
+  "description": "Test and experiment for neo4j training",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Felipe Valencia",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "xml2csv": "^1.0.1"
+  }
+}

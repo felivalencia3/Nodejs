@@ -17,18 +17,36 @@ cloudinary.config({
 const bodyparser = require("body-parser");
 const Sequelize = require("sequelize");
 const database = new Sequelize('RecipeDB', 'root', 'castro03', {
-    host: 'localhost', dialect: 'mysql',
+    host: 'localhost',
+    dialect: 'mysql',
     operatorsAliases: false,
-    pool: {max: 5, min: 0, acquire: 30000, idle: 10000},
+    pool: {
+        max: 5,
+        min: 0,
+        acquire: 30000,
+        idle: 10000
+    },
 });
 const Recipe = database.define('recipe', {
-    name: {type: Sequelize.STRING},
-    time: {type: Sequelize.DOUBLE},
-    ingredients: {type: Sequelize.TEXT},
-    directions: {type: Sequelize.TEXT},
-    author: {type: Sequelize.STRING}
+    name: {
+        type: Sequelize.STRING
+    },
+    time: {
+        type: Sequelize.DOUBLE
+    },
+    ingredients: {
+        type: Sequelize.TEXT
+    },
+    directions: {
+        type: Sequelize.TEXT
+    },
+    author: {
+        type: Sequelize.STRING
+    }
 });
-const urlencodedparser = bodyparser.urlencoded({extended: false});
+const urlencodedparser = bodyparser.urlencoded({
+    extended: false
+});
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
@@ -40,7 +58,9 @@ app.post("/recipe", urlencodedparser, (req, res, next) => {
         ingredients = req.body.ingredients || "Ingredients here",
         directions = req.body.directions || "Step by step directions",
         author = req.body.author || "Anonymous";
-    Recipe.sync({force: false}).then(() => {
+    Recipe.sync({
+        force: false
+    }).then(() => {
         const newInstance = Recipe.create({
             name: name,
             time: time,
@@ -62,15 +82,15 @@ app.get("/recipes", urlencodedparser, (req, res, next) => {
         res.send(recipe)
     })
 });
-app.get("/recipe", (req,res,next) => {
+app.get("/recipe", (req, res, next) => {
     const search = req.query.q;
     axios.get(`http://api.edamam.com/search`, {
-        params: {
-            q: search,
-            app_id: id,
-            app_key: key
-        }
-    })
+            params: {
+                q: search,
+                app_id: id,
+                app_key: key
+            }
+        })
         .then(function (response) {
             let payload = [];
             for (let i = 0; i < response.data.hits.length; i++) {
@@ -87,24 +107,28 @@ app.get("/recipe", (req,res,next) => {
                 };
                 payload.push(package_to_send)
             }
-          res.send(payload)
+            res.send(payload)
         })
         .catch(function (error) {
             console.log(error);
         })
 });
-app.post('/upload', upload.single("image"),urlencodedparser, function (req, res, next) {
+app.post('/upload', upload.single("image"), urlencodedparser, function (req, res, next) {
     const key = req.body.name;
     const imageKey = req.file.filename;
 
-    cloudinary.v2.uploader.upload(`./uploads/${imageKey}`,{public_id: key },
-        function(error, result) {console.log(result, error)});
+    cloudinary.v2.uploader.upload(`./uploads/${imageKey}`, {
+            public_id: key
+        },
+        function (error, result) {
+            console.log(result, error)
+        });
     fs.unlink(`./uploads/${imageKey}`, (err => {
         if (err) throw err;
         res.status(200).send()
     }))
 });
-app.get("/image",(req,res) => {
+app.get("/image", (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
 const server = app.listen(8081, function () {
