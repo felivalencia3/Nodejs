@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import '../styles/signup.css';
 import {
   Redirect
 } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import axios from 'axios';
 
 export default class SignUp extends Component {
@@ -20,12 +22,6 @@ export default class SignUp extends Component {
   }
 
   componentDidMount() {
-    const script1 = document.createElement('script');
-    script1.src = 'https://code.jquery.com/jquery-3.3.1.slim.min.js';
-    script1.integrity = 'sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=';
-    script1.crossOrigin = 'anonymous';
-    script1.async = true;
-    document.body.appendChild(script1);
     const script = document.createElement('script');
     script.src = '../src/Client/scripts/signup.js';
     script.async = true;
